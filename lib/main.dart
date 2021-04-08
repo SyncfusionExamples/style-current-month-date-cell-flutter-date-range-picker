@@ -13,11 +13,13 @@ class CurrentMonthCellCustomization extends StatelessWidget {
             margin: const EdgeInsets.fromLTRB(50, 150, 50, 150),
             child: SfDateRangePicker(
               view: DateRangePickerView.month,
-              monthViewSettings: DateRangePickerMonthViewSettings(showTrailingAndLeadingDates: true,
+              monthViewSettings: DateRangePickerMonthViewSettings(
+                showTrailingAndLeadingDates: true,
               ),
               monthCellStyle: DateRangePickerMonthCellStyle(
                 todayTextStyle: TextStyle(color: Colors.cyanAccent),
-                  cellDecoration: BoxDecoration(color:Colors.teal),),
+                cellDecoration: BoxDecoration(color: Colors.teal),
+              ),
             ),
           ),
         ),
